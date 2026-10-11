@@ -1,0 +1,41 @@
+{
+  "claim_id": "CLM-001",
+  "receipts": [
+    {
+      "receipt_id": "R-CLM-001-01",
+      "vendor": "SkyHigh Airlines (mock)",
+      "date": "2026-06-10",
+      "category": "airfare",
+      "amount": 420.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-001/airfare_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-001-02",
+      "vendor": "Grand Plaza Hotel (mock)",
+      "date": "2026-06-12",
+      "category": "lodging",
+      "amount": 360.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-001/lodging_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-001-03",
+      "vendor": "Bistro Central (mock)",
+      "date": "2026-06-10",
+      "category": "meals",
+      "amount": 180.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-001/meals_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-001-04",
+      "vendor": "TechConnect Summit (mock)",
+      "date": "2026-06-10",
+      "category": "conference_fees",
+      "amount": 150.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-001/conference_fees_receipt.txt"
+    }
+  ]
+}

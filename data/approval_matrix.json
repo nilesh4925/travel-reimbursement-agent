@@ -1,0 +1,22 @@
+{
+  "tiers": [
+    {
+      "id": "POL-APR-01",
+      "name": "Auto-approve",
+      "max": 500,
+      "action": "AUTO_APPROVE"
+    },
+    {
+      "id": "POL-APR-02",
+      "name": "Manager",
+      "max": 2000,
+      "action": "APPROVABLE"
+    },
+    {
+      "id": "POL-APR-03",
+      "name": "Director",
+      "max": null,
+      "action": "MANUAL_REVIEW"
+    }
+  ]
+}

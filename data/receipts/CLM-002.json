@@ -1,0 +1,23 @@
+{
+  "claim_id": "CLM-002",
+  "receipts": [
+    {
+      "receipt_id": "R-CLM-002-01",
+      "vendor": "Serenity Spa at Grand Plaza (mock)",
+      "date": "2026-06-15",
+      "category": "spa",
+      "amount": 300.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-002/spa_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-002-02",
+      "vendor": "Grand Plaza Hotel - Minibar (mock)",
+      "date": "2026-06-15",
+      "category": "minibar",
+      "amount": 80.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-002/minibar_receipt.txt"
+    }
+  ]
+}

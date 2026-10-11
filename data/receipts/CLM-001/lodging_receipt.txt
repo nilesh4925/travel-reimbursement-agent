@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-001-02
+Vendor     : Grand Plaza Hotel (mock)
+Date       : 2026-06-12
+Cardholder : A. Rivera
+----------------------------------------
+Hotel, 2 nights @ $180             $  360.00
+----------------------------------------
+TOTAL                              $  360.00
+Itemized   : yes

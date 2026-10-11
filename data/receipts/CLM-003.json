@@ -1,0 +1,32 @@
+{
+  "claim_id": "CLM-003",
+  "receipts": [
+    {
+      "receipt_id": "R-CLM-003-01",
+      "vendor": "SkyHigh Airlines (mock)",
+      "date": "2026-06-08",
+      "category": "airfare",
+      "amount": 300.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-003/airfare_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-003-02",
+      "vendor": "Grand Plaza Hotel (mock)",
+      "date": "2026-06-10",
+      "category": "lodging",
+      "amount": 500.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-003/lodging_receipt.txt"
+    },
+    {
+      "receipt_id": "R-CLM-003-03",
+      "vendor": "Bistro Central (mock)",
+      "date": "2026-06-08",
+      "category": "meals",
+      "amount": 140.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-003/meals_receipt.txt"
+    }
+  ]
+}

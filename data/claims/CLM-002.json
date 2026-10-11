@@ -1,0 +1,28 @@
+{
+  "claim_id": "CLM-002",
+  "employee": "B. Osei",
+  "purpose": "Weekend hotel stay",
+  "trip_start": "2026-06-14",
+  "trip_end": "2026-06-15",
+  "submitted_date": "2026-06-25",
+  "currency": "USD",
+  "total_claimed": 380.0,
+  "items": [
+    {
+      "category": "spa",
+      "description": "Hotel spa package",
+      "amount": 300.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1
+    },
+    {
+      "category": "minibar",
+      "description": "In-room minibar",
+      "amount": 80.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1
+    }
+  ]
+}

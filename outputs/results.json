@@ -1,0 +1,132 @@
+[
+  {
+    "claim_id": "CLM-001",
+    "decision": "APPROVE",
+    "approved_amount": 1110.0,
+    "deducted_amount": 0.0,
+    "missing_docs": [],
+    "policy_refs": [
+      "POL-AIR-01",
+      "POL-APR-02",
+      "POL-CAT-01",
+      "POL-PD-01",
+      "POL-PD-02",
+      "POL-RCT-01"
+    ],
+    "confidence": 1.0,
+    "explanation": "All items in the claim are eligible and within per-diem limits. The total claimed amount of $1110.00 is within the approvable tier (POL-APR-02). All required receipts are attached, and the claim was submitted on time (POL-TIME-01).",
+    "tools_used": [
+      "lookup_policy",
+      "check_claim_consistency",
+      "check_category_eligibility",
+      "check_receipts",
+      "check_per_diem_limits",
+      "check_timeliness",
+      "check_approval_threshold",
+      "validate_output"
+    ]
+  },
+  {
+    "claim_id": "CLM-002",
+    "decision": "REJECT",
+    "approved_amount": 0.0,
+    "deducted_amount": 380.0,
+    "missing_docs": [],
+    "policy_refs": [
+      "POL-CAT-02"
+    ],
+    "confidence": 1.0,
+    "explanation": "All items in the claim are ineligible for reimbursement. The hotel spa package ($300) and the in-room minibar ($80) are both categorized as ineligible expenses according to POL-CAT-02, resulting in a total ineligible amount of $380. Therefore, the claim is rejected.",
+    "tools_used": [
+      "lookup_policy",
+      "check_claim_consistency",
+      "check_category_eligibility",
+      "check_receipts",
+      "check_per_diem_limits",
+      "check_timeliness",
+      "validate_output"
+    ]
+  },
+  {
+    "claim_id": "CLM-003",
+    "decision": "PARTIAL_APPROVE",
+    "approved_amount": 840.0,
+    "deducted_amount": 100.0,
+    "missing_docs": [],
+    "policy_refs": [
+      "POL-AIR-01",
+      "POL-APR-02",
+      "POL-CAT-01",
+      "POL-PD-01",
+      "POL-PD-02",
+      "POL-RCT-01"
+    ],
+    "confidence": 0.9,
+    "explanation": "The claim includes eligible items, but the lodging exceeds the per diem cap by $100. The total reimbursable amount is $840, which falls within the approvable tier (POL-APR-02). All required receipts are present and the claim is submitted on time.",
+    "tools_used": [
+      "lookup_policy",
+      "check_claim_consistency",
+      "check_category_eligibility",
+      "check_receipts",
+      "check_per_diem_limits",
+      "check_timeliness",
+      "check_approval_threshold",
+      "validate_output"
+    ]
+  },
+  {
+    "claim_id": "CLM-004",
+    "decision": "MANUAL_REVIEW",
+    "approved_amount": 0.0,
+    "deducted_amount": 0.0,
+    "missing_docs": [
+      "Itemized receipt - lodging ($600.00)"
+    ],
+    "policy_refs": [
+      "POL-AIR-01",
+      "POL-APR-03",
+      "POL-CAT-01",
+      "POL-PD-02",
+      "POL-RCT-01",
+      "POL-RCT-02"
+    ],
+    "confidence": 0.7,
+    "explanation": "The claim includes a business-class airfare which is eligible but exceeds the economy fare requirement (POL-AIR-01). Additionally, there is a missing itemized receipt for lodging ($600), which is required for reimbursement (POL-RCT-02). Due to these factors, I recommend a manual review.",
+    "tools_used": [
+      "lookup_policy",
+      "check_claim_consistency",
+      "check_category_eligibility",
+      "check_receipts",
+      "check_per_diem_limits",
+      "check_timeliness",
+      "validate_output"
+    ]
+  },
+  {
+    "claim_id": "CLM-005",
+    "decision": "MANUAL_REVIEW",
+    "approved_amount": 0.0,
+    "deducted_amount": 0.0,
+    "missing_docs": [
+      "Itemized receipt - meals ($220.00)"
+    ],
+    "policy_refs": [
+      "POL-APR-01",
+      "POL-CAT-01",
+      "POL-PD-01",
+      "POL-RCT-01",
+      "POL-RCT-02"
+    ],
+    "confidence": 0.5,
+    "explanation": "Agent proposed PARTIAL_APPROVE but the policy checks indicate MANUAL_REVIEW; routed to Manual Review for human confirmation. Policy-check summary: Routed to Manual Review: 'Client dinner for 4 (business development)' ($220.00): multi-attendee meal - the per-diem policy does not say how the cap applies to group meals (POL-PD-01); Itemized receipt - meals ($220.00) is missing and the reviewer should request it (POL-RCT-01/02). If the reviewer clears these, the indicative outcome is $75.00 approved and $145.00 deducted (meals $220.00 exceeds the $75.00 cap (1 x $75.00 per day) by $145.00 [POL-PD-01]).",
+    "tools_used": [
+      "lookup_policy",
+      "check_claim_consistency",
+      "check_category_eligibility",
+      "check_receipts",
+      "check_per_diem_limits",
+      "check_timeliness",
+      "validate_output"
+    ]
+  }
+]

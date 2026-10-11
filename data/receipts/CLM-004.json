@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-004",
+  "receipts": [
+    {
+      "receipt_id": "R-CLM-004-01",
+      "vendor": "SkyHigh Airlines (mock)",
+      "date": "2026-06-16",
+      "category": "airfare",
+      "amount": 2400.0,
+      "itemized": true,
+      "attachment": "receipts/CLM-004/airfare_receipt.txt"
+    }
+  ]
+}

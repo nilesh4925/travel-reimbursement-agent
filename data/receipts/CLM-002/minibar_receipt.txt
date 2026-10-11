@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-002-02
+Vendor     : Grand Plaza Hotel - Minibar (mock)
+Date       : 2026-06-15
+Cardholder : B. Osei
+----------------------------------------
+In-room minibar                    $   80.00
+----------------------------------------
+TOTAL                              $   80.00
+Itemized   : yes

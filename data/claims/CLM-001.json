@@ -1,0 +1,45 @@
+{
+  "claim_id": "CLM-001",
+  "employee": "A. Rivera",
+  "purpose": "Attend 2-day industry conference (business)",
+  "trip_start": "2026-06-10",
+  "trip_end": "2026-06-12",
+  "submitted_date": "2026-06-20",
+  "currency": "USD",
+  "total_claimed": 1110.0,
+  "items": [
+    {
+      "category": "airfare",
+      "description": "Round-trip economy airfare",
+      "amount": 420.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1,
+      "fare_class": "economy"
+    },
+    {
+      "category": "lodging",
+      "description": "Hotel, 2 nights @ $180",
+      "amount": 360.0,
+      "receipt_attached": true,
+      "units": 2,
+      "attendees": 1
+    },
+    {
+      "category": "meals",
+      "description": "Meals, 3 days @ ~$60/day",
+      "amount": 180.0,
+      "receipt_attached": true,
+      "units": 3,
+      "attendees": 1
+    },
+    {
+      "category": "conference_fees",
+      "description": "Conference registration",
+      "amount": 150.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1
+    }
+  ]
+}

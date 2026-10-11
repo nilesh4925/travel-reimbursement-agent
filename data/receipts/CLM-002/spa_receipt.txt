@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-002-01
+Vendor     : Serenity Spa at Grand Plaza (mock)
+Date       : 2026-06-15
+Cardholder : B. Osei
+----------------------------------------
+Hotel spa package                  $  300.00
+----------------------------------------
+TOTAL                              $  300.00
+Itemized   : yes
