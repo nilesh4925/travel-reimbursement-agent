@@ -6,7 +6,7 @@ receipts, limits and approval rules, and returns a structured recommendation
 
 ## The deliverable: `travel-reimbursement-agent.ipynb`
 
-**Rename it to `<namesurname>.ipynb` before submitting.** The notebook is the single, self-contained deliverable:
+The notebook is the single, self-contained deliverable:
 setup/README, embedded policy + sample claims + receipts, tools, agent, sample outputs, **Dashboard** (charts +
 interactive UI), **Evaluation & tests**, **Design Notes & Reasoning**, and a final cell that prints the JSON array
 for the five provided claims. Saved outputs are included (offline mode); add an `OPENAI_API_KEY` to run LLM mode.
