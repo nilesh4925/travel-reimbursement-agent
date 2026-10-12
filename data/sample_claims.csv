@@ -1,0 +1,13 @@
+claim_id,employee,purpose,trip_start,trip_end,submitted_date,total_claimed,category,description,amount,receipt_attached,units,attendees,fare_class
+CLM-001,A. Rivera,Attend 2-day industry conference (business),2026-06-10,2026-06-12,2026-06-20,1110.0,airfare,Round-trip economy airfare,420.0,Yes,1,1,economy
+CLM-001,A. Rivera,Attend 2-day industry conference (business),2026-06-10,2026-06-12,2026-06-20,1110.0,lodging,"Hotel, 2 nights @ $180",360.0,Yes,2,1,
+CLM-001,A. Rivera,Attend 2-day industry conference (business),2026-06-10,2026-06-12,2026-06-20,1110.0,meals,"Meals, 3 days @ ~$60/day",180.0,Yes,3,1,
+CLM-001,A. Rivera,Attend 2-day industry conference (business),2026-06-10,2026-06-12,2026-06-20,1110.0,conference_fees,Conference registration,150.0,Yes,1,1,
+CLM-002,B. Osei,Weekend hotel stay,2026-06-14,2026-06-15,2026-06-25,380.0,spa,Hotel spa package,300.0,Yes,1,1,
+CLM-002,B. Osei,Weekend hotel stay,2026-06-14,2026-06-15,2026-06-25,380.0,minibar,In-room minibar,80.0,Yes,1,1,
+CLM-003,C. Nakamura,Client site visit (business),2026-06-08,2026-06-10,2026-06-22,940.0,airfare,Round-trip economy airfare,300.0,Yes,1,1,economy
+CLM-003,C. Nakamura,Client site visit (business),2026-06-08,2026-06-10,2026-06-22,940.0,lodging,"Hotel, 2 nights @ $250",500.0,Yes,2,1,
+CLM-003,C. Nakamura,Client site visit (business),2026-06-08,2026-06-10,2026-06-22,940.0,meals,"Meals, 2 days @ $70/day",140.0,Yes,2,1,
+CLM-004,D. Fischer,International vendor negotiation (business),2026-06-16,2026-06-18,2026-06-28,3000.0,airfare,Business-class international airfare,2400.0,Yes,1,1,business
+CLM-004,D. Fischer,International vendor negotiation (business),2026-06-16,2026-06-18,2026-06-28,3000.0,lodging,"Hotel, 3 nights",600.0,No,3,1,
+CLM-005,E. Haddad,Client dinner / business development,2026-06-11,2026-06-11,2026-06-24,220.0,meals,Client dinner for 4 (business development),220.0,No,1,4,

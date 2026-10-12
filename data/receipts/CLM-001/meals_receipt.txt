@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-001-03
+Vendor     : Bistro Central (mock)
+Date       : 2026-06-10
+Cardholder : A. Rivera
+----------------------------------------
+Meals, 3 days @ ~$60/day           $  180.00
+----------------------------------------
+TOTAL                              $  180.00
+Itemized   : yes

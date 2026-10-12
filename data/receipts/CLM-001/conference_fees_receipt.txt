@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-001-04
+Vendor     : TechConnect Summit (mock)
+Date       : 2026-06-10
+Cardholder : A. Rivera
+----------------------------------------
+Conference registration            $  150.00
+----------------------------------------
+TOTAL                              $  150.00
+Itemized   : yes

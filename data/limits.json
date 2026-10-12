@@ -1,0 +1,68 @@
+{
+  "currency": "USD",
+  "per_diem": {
+    "meals": {
+      "cap": 75,
+      "unit": "day",
+      "rule": "POL-PD-01"
+    },
+    "lodging": {
+      "cap": 200,
+      "unit": "night",
+      "rule": "POL-PD-02"
+    },
+    "ground_transport": {
+      "cap": 50,
+      "unit": "day",
+      "rule": "POL-PD-03"
+    }
+  },
+  "receipt": {
+    "required_above": 25,
+    "always_required": [
+      "airfare",
+      "lodging"
+    ]
+  },
+  "submission_window_days": 30,
+  "categories": {
+    "eligible": [
+      "airfare",
+      "lodging",
+      "meals",
+      "ground_transport",
+      "conference_fees"
+    ],
+    "ineligible": [
+      "alcohol",
+      "minibar",
+      "spa",
+      "gym",
+      "entertainment",
+      "movies",
+      "shopping",
+      "gifts",
+      "fines",
+      "personal"
+    ]
+  },
+  "aliases": {
+    "flight": "airfare",
+    "hotel": "lodging",
+    "meal": "meals",
+    "food": "meals",
+    "taxi": "ground_transport",
+    "rideshare": "ground_transport",
+    "train": "ground_transport",
+    "rental_car": "ground_transport",
+    "parking": "ground_transport",
+    "ground": "ground_transport",
+    "conference": "conference_fees",
+    "registration": "conference_fees",
+    "conference_registration": "conference_fees",
+    "fine": "fines",
+    "gift": "gifts",
+    "movie": "movies",
+    "personal_expense": "personal"
+  }
+}

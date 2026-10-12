@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-003-02
+Vendor     : Grand Plaza Hotel (mock)
+Date       : 2026-06-10
+Cardholder : C. Nakamura
+----------------------------------------
+Hotel, 2 nights @ $250             $  500.00
+----------------------------------------
+TOTAL                              $  500.00
+Itemized   : yes

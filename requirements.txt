@@ -1,0 +1,7 @@
+pydantic>=2.5
+pandas>=2.0
+matplotlib>=3.7
+python-dotenv>=1.0
+openai>=1.40         # only needed for LLM mode
+streamlit>=1.50      # only needed for the Streamlit UI
+ipywidgets>=8.0      # interactive UI inside the notebook

@@ -1,0 +1,10 @@
+MOCK RECEIPT - SAMPLE DATA ONLY
+Receipt ID : R-CLM-001-01
+Vendor     : SkyHigh Airlines (mock)
+Date       : 2026-06-10
+Cardholder : A. Rivera
+----------------------------------------
+Round-trip economy airfare         $  420.00
+----------------------------------------
+TOTAL                              $  420.00
+Itemized   : yes

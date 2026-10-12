@@ -1,0 +1,896 @@
+[
+  {
+    "name": "CLM-001 (provided)",
+    "description": "Attend 2-day industry conference (business)",
+    "claim": {
+      "claim_id": "CLM-001",
+      "employee": "A. Rivera",
+      "purpose": "Attend 2-day industry conference (business)",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-12",
+      "submitted_date": "2026-06-20",
+      "currency": "USD",
+      "total_claimed": 1110.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Round-trip economy airfare",
+          "amount": 420.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        },
+        {
+          "category": "lodging",
+          "description": "Hotel, 2 nights @ $180",
+          "amount": 360.0,
+          "receipt_attached": true,
+          "units": 2,
+          "attendees": 1
+        },
+        {
+          "category": "meals",
+          "description": "Meals, 3 days @ ~$60/day",
+          "amount": 180.0,
+          "receipt_attached": true,
+          "units": 3,
+          "attendees": 1
+        },
+        {
+          "category": "conference_fees",
+          "description": "Conference registration",
+          "amount": 150.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 1110,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-02"
+      ]
+    }
+  },
+  {
+    "name": "CLM-002 (provided)",
+    "description": "Weekend hotel stay",
+    "claim": {
+      "claim_id": "CLM-002",
+      "employee": "B. Osei",
+      "purpose": "Weekend hotel stay",
+      "trip_start": "2026-06-14",
+      "trip_end": "2026-06-15",
+      "submitted_date": "2026-06-25",
+      "currency": "USD",
+      "total_claimed": 380.0,
+      "items": [
+        {
+          "category": "spa",
+          "description": "Hotel spa package",
+          "amount": 300.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        },
+        {
+          "category": "minibar",
+          "description": "In-room minibar",
+          "amount": 80.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "REJECT",
+      "approved_amount": 0,
+      "deducted_amount": 380,
+      "policy_refs_include": [
+        "POL-CAT-02"
+      ]
+    }
+  },
+  {
+    "name": "CLM-003 (provided)",
+    "description": "Client site visit (business)",
+    "claim": {
+      "claim_id": "CLM-003",
+      "employee": "C. Nakamura",
+      "purpose": "Client site visit (business)",
+      "trip_start": "2026-06-08",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-22",
+      "currency": "USD",
+      "total_claimed": 940.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Round-trip economy airfare",
+          "amount": 300.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        },
+        {
+          "category": "lodging",
+          "description": "Hotel, 2 nights @ $250",
+          "amount": 500.0,
+          "receipt_attached": true,
+          "units": 2,
+          "attendees": 1
+        },
+        {
+          "category": "meals",
+          "description": "Meals, 2 days @ $70/day",
+          "amount": 140.0,
+          "receipt_attached": true,
+          "units": 2,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "PARTIAL_APPROVE",
+      "approved_amount": 840,
+      "deducted_amount": 100,
+      "policy_refs_include": [
+        "POL-PD-02",
+        "POL-APR-02"
+      ]
+    }
+  },
+  {
+    "name": "CLM-004 (provided)",
+    "description": "International vendor negotiation (business)",
+    "claim": {
+      "claim_id": "CLM-004",
+      "employee": "D. Fischer",
+      "purpose": "International vendor negotiation (business)",
+      "trip_start": "2026-06-16",
+      "trip_end": "2026-06-18",
+      "submitted_date": "2026-06-28",
+      "currency": "USD",
+      "total_claimed": 3000.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Business-class international airfare",
+          "amount": 2400.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "business"
+        },
+        {
+          "category": "lodging",
+          "description": "Hotel, 3 nights",
+          "amount": 600.0,
+          "receipt_attached": false,
+          "units": 3,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-AIR-01",
+        "POL-RCT-02",
+        "POL-APR-03"
+      ]
+    }
+  },
+  {
+    "name": "CLM-005 (provided)",
+    "description": "Client dinner / business development",
+    "claim": {
+      "claim_id": "CLM-005",
+      "employee": "E. Haddad",
+      "purpose": "Client dinner / business development",
+      "trip_start": "2026-06-11",
+      "trip_end": "2026-06-11",
+      "submitted_date": "2026-06-24",
+      "currency": "USD",
+      "total_claimed": 220.0,
+      "items": [
+        {
+          "category": "meals",
+          "description": "Client dinner for 4 (business development)",
+          "amount": 220.0,
+          "receipt_attached": false,
+          "units": 1,
+          "attendees": 4
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-RCT-02"
+      ]
+    }
+  },
+  {
+    "name": "meal over daily cap",
+    "description": "Dinner $100 vs $75/day cap -> deduct $25",
+    "claim": {
+      "claim_id": "EDGE-01",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 100,
+      "items": [
+        {
+          "category": "meals",
+          "description": "Dinner",
+          "amount": 100,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "PARTIAL_APPROVE",
+      "approved_amount": 75,
+      "deducted_amount": 25,
+      "policy_refs_include": [
+        "POL-PD-01"
+      ]
+    }
+  },
+  {
+    "name": "late claim (52 days)",
+    "description": "Submitted long after the 30-day window",
+    "claim": {
+      "claim_id": "EDGE-02",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-08-01",
+      "currency": "USD",
+      "total_claimed": 40,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxi",
+          "amount": 40,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-TIME-01"
+      ]
+    }
+  },
+  {
+    "name": "exactly 30 days is on time",
+    "description": "Boundary: 30 days is within the window",
+    "claim": {
+      "claim_id": "EDGE-03",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-07-10",
+      "currency": "USD",
+      "total_claimed": 40,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxi",
+          "amount": 40,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 40,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-01"
+      ]
+    }
+  },
+  {
+    "name": "31 days is late",
+    "description": "Boundary: 31 days is outside the window",
+    "claim": {
+      "claim_id": "EDGE-04",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-07-11",
+      "currency": "USD",
+      "total_claimed": 40,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxi",
+          "amount": 40,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-TIME-01"
+      ]
+    }
+  },
+  {
+    "name": "unknown category",
+    "description": "Category not covered by the policy",
+    "claim": {
+      "claim_id": "EDGE-05",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 120,
+      "items": [
+        {
+          "category": "visa_fee",
+          "description": "Visa fee",
+          "amount": 120,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-CAT-01"
+      ]
+    }
+  },
+  {
+    "name": "stated total mismatch",
+    "description": "Form total differs from sum of items",
+    "claim": {
+      "claim_id": "EDGE-06",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 150.0,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxi",
+          "amount": 100,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": []
+    }
+  },
+  {
+    "name": "receipt not needed at exactly $25",
+    "description": "Boundary: receipt only required above $25",
+    "claim": {
+      "claim_id": "EDGE-07",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 25.0,
+      "items": [
+        {
+          "category": "meals",
+          "description": "Snack",
+          "amount": 25.0,
+          "receipt_attached": false,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 25,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-01"
+      ]
+    }
+  },
+  {
+    "name": "receipt needed above $25",
+    "description": "Boundary: $25.01 without receipt",
+    "claim": {
+      "claim_id": "EDGE-08",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 25.01,
+      "items": [
+        {
+          "category": "meals",
+          "description": "Lunch",
+          "amount": 25.01,
+          "receipt_attached": false,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-RCT-02"
+      ]
+    }
+  },
+  {
+    "name": "tier boundary $500",
+    "description": "Total exactly $500 is auto-approve tier",
+    "claim": {
+      "claim_id": "EDGE-09",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 500.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Economy flight",
+          "amount": 500.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 500,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-01"
+      ]
+    }
+  },
+  {
+    "name": "tier boundary $2,000",
+    "description": "Total exactly $2,000 is manager tier",
+    "claim": {
+      "claim_id": "EDGE-10",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 2000.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Economy flight",
+          "amount": 2000.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 2000,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-02"
+      ]
+    }
+  },
+  {
+    "name": "just above $2,000",
+    "description": "$2,000.01 exceeds agent authority",
+    "claim": {
+      "claim_id": "EDGE-11",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 2000.01,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Economy flight",
+          "amount": 2000.01,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-APR-03"
+      ]
+    }
+  },
+  {
+    "name": "eligible + ineligible mix",
+    "description": "Valid airfare plus a spa charge",
+    "claim": {
+      "claim_id": "EDGE-12",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 400,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Economy flight",
+          "amount": 300,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        },
+        {
+          "category": "spa",
+          "description": "Spa",
+          "amount": 100,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "PARTIAL_APPROVE",
+      "approved_amount": 300,
+      "deducted_amount": 100,
+      "policy_refs_include": [
+        "POL-CAT-02"
+      ]
+    }
+  },
+  {
+    "name": "ground transport cap",
+    "description": "$120 over 2 days vs $50/day cap",
+    "claim": {
+      "claim_id": "EDGE-13",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 120,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxis",
+          "amount": 120,
+          "receipt_attached": true,
+          "units": 2,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "PARTIAL_APPROVE",
+      "approved_amount": 100,
+      "deducted_amount": 20,
+      "policy_refs_include": [
+        "POL-PD-03"
+      ]
+    }
+  },
+  {
+    "name": "airfare class not stated",
+    "description": "Cannot confirm economy-only rule",
+    "claim": {
+      "claim_id": "EDGE-14",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 400,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Flight to Chicago",
+          "amount": 400,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-AIR-01"
+      ]
+    }
+  },
+  {
+    "name": "first-class airfare",
+    "description": "Policy exception, not auto-deducted",
+    "claim": {
+      "claim_id": "EDGE-15",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 900,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "First class flight",
+          "amount": 900,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "first"
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-AIR-01"
+      ]
+    }
+  },
+  {
+    "name": "small lodging, no receipt",
+    "description": "Lodging always needs a receipt",
+    "claim": {
+      "claim_id": "EDGE-16",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 20,
+      "items": [
+        {
+          "category": "lodging",
+          "description": "Hotel",
+          "amount": 20,
+          "receipt_attached": false,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-RCT-02"
+      ]
+    }
+  },
+  {
+    "name": "receipt amount mismatch",
+    "description": "Receipt on file says $420, claim says $430",
+    "claim": {
+      "claim_id": "CLM-001",
+      "employee": "A. Rivera",
+      "purpose": "Attend 2-day industry conference (business)",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-12",
+      "submitted_date": "2026-06-20",
+      "currency": "USD",
+      "total_claimed": 1120.0,
+      "items": [
+        {
+          "category": "airfare",
+          "description": "Round-trip economy airfare",
+          "amount": 430.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1,
+          "fare_class": "economy"
+        },
+        {
+          "category": "lodging",
+          "description": "Hotel, 2 nights @ $180",
+          "amount": 360.0,
+          "receipt_attached": true,
+          "units": 2,
+          "attendees": 1
+        },
+        {
+          "category": "meals",
+          "description": "Meals, 3 days",
+          "amount": 180.0,
+          "receipt_attached": true,
+          "units": 3,
+          "attendees": 1
+        },
+        {
+          "category": "conference_fees",
+          "description": "Conference registration",
+          "amount": 150.0,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": []
+    }
+  },
+  {
+    "name": "submitted before trip",
+    "description": "Impossible date ordering",
+    "claim": {
+      "claim_id": "EDGE-18",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-01",
+      "currency": "USD",
+      "total_claimed": 40,
+      "items": [
+        {
+          "category": "ground_transport",
+          "description": "Taxi",
+          "amount": 40,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "MANUAL_REVIEW",
+      "approved_amount": 0,
+      "deducted_amount": 0,
+      "policy_refs_include": []
+    }
+  },
+  {
+    "name": "alcohol only",
+    "description": "Ineligible: nothing reimbursable",
+    "claim": {
+      "claim_id": "EDGE-19",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 60,
+      "items": [
+        {
+          "category": "alcohol",
+          "description": "Bar tab",
+          "amount": 60,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "REJECT",
+      "approved_amount": 0,
+      "deducted_amount": 60,
+      "policy_refs_include": [
+        "POL-CAT-02"
+      ]
+    }
+  },
+  {
+    "name": "category alias (taxi)",
+    "description": "'Taxi' maps to ground_transport",
+    "claim": {
+      "claim_id": "EDGE-20",
+      "employee": "T. Tester",
+      "purpose": "Evaluation case",
+      "trip_start": "2026-06-10",
+      "trip_end": "2026-06-10",
+      "submitted_date": "2026-06-12",
+      "currency": "USD",
+      "total_claimed": 30,
+      "items": [
+        {
+          "category": "Taxi",
+          "description": "Airport taxi",
+          "amount": 30,
+          "receipt_attached": true,
+          "units": 1,
+          "attendees": 1
+        }
+      ]
+    },
+    "expected": {
+      "decision": "APPROVE",
+      "approved_amount": 30,
+      "deducted_amount": 0,
+      "policy_refs_include": [
+        "POL-PD-03"
+      ]
+    }
+  }
+]

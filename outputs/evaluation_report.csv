@@ -1,0 +1,2 @@
+case,expected,got,approved,deducted,confidence,decision_ok,amounts_ok,refs_ok,passed,seconds
+CLM-004 (provided),MANUAL_REVIEW,MANUAL_REVIEW,0.0,0.0,0.9,True,True,True,True,0.0

@@ -1,0 +1,194 @@
+[
+  {
+    "id": "POL-CAT-01",
+    "title": "Eligible categories",
+    "text": "Reimbursable when incurred for a documented business purpose: airfare (economy class only, see POL-AIR-01), lodging (hotel room charges), meals (subject to per-diem limits, see POL-PD-01), ground transport (taxi, rideshare, train, rental car, parking), conference / registration fees.",
+    "tags": [
+      "eligible",
+      "categories",
+      "airfare",
+      "lodging",
+      "meals",
+      "ground",
+      "transport",
+      "taxi",
+      "rideshare",
+      "train",
+      "rental",
+      "parking",
+      "conference",
+      "registration",
+      "fees"
+    ]
+  },
+  {
+    "id": "POL-CAT-02",
+    "title": "Ineligible items",
+    "text": "Never reimbursable; rejected (deducted in full): alcohol and minibar charges; spa, gym, and personal entertainment; in-room movies, personal shopping, gifts; traffic fines, penalties, and late fees; any personal (non-business) expense.",
+    "tags": [
+      "ineligible",
+      "spa",
+      "minibar",
+      "alcohol",
+      "gym",
+      "entertainment",
+      "movies",
+      "shopping",
+      "gifts",
+      "fines",
+      "penalties",
+      "personal",
+      "reject",
+      "deducted"
+    ]
+  },
+  {
+    "id": "POL-PD-01",
+    "title": "Meals per-diem",
+    "text": "Maximum $75 per day. Amounts above the daily cap are deducted; the rest is reimbursed.",
+    "tags": [
+      "meals",
+      "per",
+      "diem",
+      "daily",
+      "cap",
+      "75",
+      "dinner",
+      "lunch",
+      "breakfast",
+      "food"
+    ]
+  },
+  {
+    "id": "POL-PD-02",
+    "title": "Lodging nightly cap",
+    "text": "Maximum $200 per night. Amounts above the nightly cap are deducted; the rest is reimbursed.",
+    "tags": [
+      "lodging",
+      "hotel",
+      "night",
+      "nightly",
+      "cap",
+      "200",
+      "room"
+    ]
+  },
+  {
+    "id": "POL-PD-03",
+    "title": "Ground transport cap",
+    "text": "Maximum $50 per day. Amounts above the cap are deducted.",
+    "tags": [
+      "ground",
+      "transport",
+      "taxi",
+      "rideshare",
+      "train",
+      "rental",
+      "parking",
+      "daily",
+      "cap",
+      "50"
+    ]
+  },
+  {
+    "id": "POL-AIR-01",
+    "title": "Airfare class",
+    "text": "Only economy class airfare is reimbursable. Business/first-class fares are a policy exception and must be routed to Manual Review (not auto-deducted, because a pre-approval may exist).",
+    "tags": [
+      "airfare",
+      "flight",
+      "class",
+      "economy",
+      "business",
+      "first",
+      "exception",
+      "manual",
+      "review",
+      "pre-approval"
+    ]
+  },
+  {
+    "id": "POL-RCT-01",
+    "title": "Receipt required above $25",
+    "text": "Any single line item greater than $25 requires an attached, itemized receipt. Airfare and lodging always require a receipt regardless of amount.",
+    "tags": [
+      "receipt",
+      "itemized",
+      "required",
+      "25",
+      "airfare",
+      "lodging",
+      "attachment"
+    ]
+  },
+  {
+    "id": "POL-RCT-02",
+    "title": "Missing receipt handling",
+    "text": "If a receipt is missing for an item that requires one, the item is not silently rejected - the claim is routed to Manual Review so the reviewer can request the receipt.",
+    "tags": [
+      "missing",
+      "receipt",
+      "manual",
+      "review",
+      "request"
+    ]
+  },
+  {
+    "id": "POL-APR-01",
+    "title": "Auto-approve tier",
+    "text": "Total <= $500: may be auto-approved by the agent if fully compliant.",
+    "tags": [
+      "approval",
+      "threshold",
+      "auto",
+      "approve",
+      "tier",
+      "500",
+      "total"
+    ]
+  },
+  {
+    "id": "POL-APR-02",
+    "title": "Manager tier",
+    "text": "Total > $500 and <= $2,000: eligible for approval, treated as approvable when fully compliant.",
+    "tags": [
+      "approval",
+      "threshold",
+      "manager",
+      "tier",
+      "500",
+      "2000",
+      "total"
+    ]
+  },
+  {
+    "id": "POL-APR-03",
+    "title": "Director / Manual-Review tier",
+    "text": "Total > $2,000: exceeds the agent's auto-approval authority and must be routed to Manual Review (director approval required), even if otherwise compliant.",
+    "tags": [
+      "approval",
+      "threshold",
+      "director",
+      "manual",
+      "review",
+      "2000",
+      "high",
+      "value",
+      "total"
+    ]
+  },
+  {
+    "id": "POL-TIME-01",
+    "title": "Submission window",
+    "text": "Claims must be submitted within 30 days of the expense date. Late claims are routed to Manual Review.",
+    "tags": [
+      "timeliness",
+      "submission",
+      "window",
+      "30",
+      "days",
+      "late",
+      "deadline"
+    ]
+  }
+]

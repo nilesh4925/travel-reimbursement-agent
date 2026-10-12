@@ -1,0 +1,37 @@
+{
+  "claim_id": "CLM-003",
+  "employee": "C. Nakamura",
+  "purpose": "Client site visit (business)",
+  "trip_start": "2026-06-08",
+  "trip_end": "2026-06-10",
+  "submitted_date": "2026-06-22",
+  "currency": "USD",
+  "total_claimed": 940.0,
+  "items": [
+    {
+      "category": "airfare",
+      "description": "Round-trip economy airfare",
+      "amount": 300.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1,
+      "fare_class": "economy"
+    },
+    {
+      "category": "lodging",
+      "description": "Hotel, 2 nights @ $250",
+      "amount": 500.0,
+      "receipt_attached": true,
+      "units": 2,
+      "attendees": 1
+    },
+    {
+      "category": "meals",
+      "description": "Meals, 2 days @ $70/day",
+      "amount": 140.0,
+      "receipt_attached": true,
+      "units": 2,
+      "attendees": 1
+    }
+  ]
+}

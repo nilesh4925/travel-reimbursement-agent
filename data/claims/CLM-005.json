@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM-005",
+  "employee": "E. Haddad",
+  "purpose": "Client dinner / business development",
+  "trip_start": "2026-06-11",
+  "trip_end": "2026-06-11",
+  "submitted_date": "2026-06-24",
+  "currency": "USD",
+  "total_claimed": 220.0,
+  "items": [
+    {
+      "category": "meals",
+      "description": "Client dinner for 4 (business development)",
+      "amount": 220.0,
+      "receipt_attached": false,
+      "units": 1,
+      "attendees": 4
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "claim_id": "CLM-004",
+  "employee": "D. Fischer",
+  "purpose": "International vendor negotiation (business)",
+  "trip_start": "2026-06-16",
+  "trip_end": "2026-06-18",
+  "submitted_date": "2026-06-28",
+  "currency": "USD",
+  "total_claimed": 3000.0,
+  "items": [
+    {
+      "category": "airfare",
+      "description": "Business-class international airfare",
+      "amount": 2400.0,
+      "receipt_attached": true,
+      "units": 1,
+      "attendees": 1,
+      "fare_class": "business"
+    },
+    {
+      "category": "lodging",
+      "description": "Hotel, 3 nights",
+      "amount": 600.0,
+      "receipt_attached": false,
+      "units": 3,
+      "attendees": 1
+    }
+  ]
+}
