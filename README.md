@@ -4,7 +4,8 @@ A runnable GenAI / agentic prototype that reviews employee travel-reimbursement 
 receipts, limits and approval rules, and returns a structured recommendation
 (`APPROVE`, `PARTIAL_APPROVE`, `REJECT`, `MANUAL_REVIEW`).
 
-## The deliverable: `nilesh.ipynb`
+## The deliverable: `travel-reimbursement-agent.ipynb`
+
 **Rename it to `<namesurname>.ipynb` before submitting.** The notebook is the single, self-contained deliverable:
 setup/README, embedded policy + sample claims + receipts, tools, agent, sample outputs, **Dashboard** (charts +
 interactive UI), **Evaluation & tests**, **Design Notes & Reasoning**, and a final cell that prints the JSON array
@@ -12,21 +13,39 @@ for the five provided claims. Saved outputs are included (offline mode); add an 
 
 ```bash
 pip install -r requirements.txt jupyter
-jupyter notebook nilesh.ipynb        # Kernel -> Restart & Run All
+jupyter notebook travel-reimbursement-agent.ipynb        # Kernel -> Restart & Run All
 ```
 
 The rest of the repository is the same code organised as a normal Python project (CLI, Streamlit UI, tests).
-`nilesh.ipynb` is generated from it by `python build_notebook.py`, so the two never drift apart.
+`travel-reimbursement-agent.ipynb` is generated from it by `python build_notebook.py`, so the two never drift apart.
+
+## Notebook Structure (top to bottom)
+
+1. **Configuration & Embedded Data** — Policy rules, limits, approval matrix, 5 claims, mock receipts, 25 eval cases
+2. **Policy Reference** — Markdown rendering of Appendix A policy
+3. **Claim Models & Intake** — Pydantic models (Claim, ClaimItem, ClaimResult), JSON/CSV parsing
+4. **Policy Grounding** — Keyword retrieval over 12 POL-* rules
+5. **Tools** — 7 deterministic tools (lookup_policy, check_claim_consistency, check_category_eligibility, check_receipts, check_per_diem_limits, check_timeliness, check_approval_threshold)
+6. **Policy Engine** — Decision logic: amounts, refs, explanation, signal-based confidence
+7. **Output Validator** — Schema + business-consistency checks
+8. **Agent** — OpenAI function-calling loop (LLM mode) + offline deterministic planner + guardrails
+9. **Run on 5 Provided Claims** — Agent evaluation with printed results
+10. **Sample Outputs** — Decisions & explanations for all 5 claims
+11. **Dashboard** — Matplotlib charts + interactive ipywidgets UI
+12. **Evaluation & Tests** — 25 labelled cases, accuracy, Brier score, confidence bands
+13. **Design Notes & Reasoning** — Assumptions, trade-offs, manual review rationale, limitations, next steps
+14. **Final Results** — JSON array with exact 9 required fields per claim
 
 ## How it works
+
 ```
 claim (JSON/CSV/UI) -> intake -> Agent
    LLM mode : OpenAI model <-> tools (lookup_policy, check_claim_consistency, check_category_eligibility,
-              check_receipts, check_per_diem_limits, check_timeliness, check_approval_threshold)
-              -> submit_decision(decision, confidence, explanation)
+               check_receipts, check_per_diem_limits, check_timeliness, check_approval_threshold)
+               -> submit_decision(decision, confidence, explanation)
    Offline  : same tools, fixed order (no API key needed)
-        -> policy-engine cross-check (disagreement => MANUAL_REVIEW)
-        -> output validator (invalid => MANUAL_REVIEW) -> ClaimResult
+         -> policy-engine cross-check (disagreement => MANUAL_REVIEW)
+         -> output validator (invalid => MANUAL_REVIEW) -> ClaimResult
 ```
 Tools do all arithmetic; the LLM chooses tools and explains. See [`docs/DESIGN_NOTES.md`](docs/DESIGN_NOTES.md).
 
@@ -44,6 +63,7 @@ For `MANUAL_REVIEW` no amount is finalised (`approved_amount` and `deducted_amou
 the indicative outcome if the reviewer clears the issue.
 
 ## Tests and evaluation
+
 Run these from the project root, with the virtual environment active:
 ```bash
 pip install -r requirements.txt -r requirements-dev.txt
@@ -56,6 +76,7 @@ python evaluate.py --mode llm --workers 4    # run 4 cases in parallel (much fas
 python evaluate.py --only CLM-004            # only cases whose name contains this text
 python evaluate.py --mode auto     # LLM if OPENAI_API_KEY is set, otherwise offline
 ```
+
 **Which mode is used?** `evaluate.py` defaults to `--mode offline` on purpose: the baseline is deterministic and
 needs no key, so having `OPENAI_API_KEY` in `.env` does **not** switch it to the LLM. The first line of the output
 shows the mode (`[mode: offline]` or `[mode: llm]`). In LLM mode, any case where the model disagrees with the policy
@@ -75,6 +96,7 @@ The 25 labelled cases (`data/eval_cases.json`) are the 5 provided claims plus 20
 boundary (30 vs 31 days, $25.00 vs $25.01, $500 / $2,000 / $2,000.01, unknown categories, conflicting data, ...).
 
 ## Run as a normal project
+
 ```bash
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -94,18 +116,19 @@ streamlit run app.py                                   # Streamlit UI
 | `MAX_AGENT_TURNS` | No | `12` | Safety cap on tool-calling turns per claim. |
 
 ## Project structure
+
 ```
-├── nilesh.ipynb              # THE deliverable (self-contained, outputs saved)
-├── build_notebook.py         # generates the notebook from the package + data
-├── run_demo.py  app.py       # CLI and Streamlit UI
-├── evaluate.py  tests/       # evaluation script and pytest suite
-├── openai_check.py           # one-call OpenAI connectivity test (reads .env)
-├── travel_agent/             # models, intake, policy_store, tools, engine, agent, validator, dashboard, evaluation
-├── data/                     # policy.md, policy_rules.json, limits.json, approval_matrix.json,
-│                             # claims/ (5 JSON) + sample_claims.csv, receipts/ (mock metadata + text),
-│                             # eval_cases.json (25 labelled cases)
-├── docs/DESIGN_NOTES.md      # design notes, assumptions, limitations, next steps
-└── outputs/                  # results.json, dashboard.png, UI SS_1.png, evaluation_report.csv
+├── travel-reimbursement-agent.ipynb   # THE deliverable (self-contained, outputs saved)
+├── build_notebook.py                  # generates the notebook from the package + data
+├── run_demo.py  app.py                # CLI and Streamlit UI
+├── evaluate.py  tests/                # evaluation script and pytest suite
+├── openai_check.py                    # one-call OpenAI connectivity test (reads .env)
+├── travel_agent/                      # models, intake, policy_store, tools, engine, agent, validator, dashboard, evaluation
+├── data/                              # policy.md, policy_rules.json, limits.json, approval_matrix.json,
+│                                      # claims/ (5 JSON) + sample_claims.csv, receipts/ (mock metadata + text),
+│                                      # eval_cases.json (25 labelled cases)
+├── docs/DESIGN_NOTES.md               # design notes, assumptions, limitations, next steps
+└── outputs/                           # results.json, dashboard.png, UI SS_1.png, evaluation_report.csv
 ```
 
 ## Troubleshooting LLM mode
